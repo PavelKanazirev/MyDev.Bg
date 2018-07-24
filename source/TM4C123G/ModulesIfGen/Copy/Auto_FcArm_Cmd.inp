@@ -1,0 +1,10 @@
+common\Logger.cpp,
+common\Logger.h,
+ModuleA\ModuleA.cpp,
+ModuleA\ModuleA.h,
+ModuleB\ModuleB.cpp,
+ModuleB\ModuleB.h,
+ModuleC\ModuleC.cpp,
+ModuleC\ModuleC.h,
+Interfaces\IRunnable.h 
+TO C:\work\Presentation\ModulesIfGen\Binaries NOPRINT

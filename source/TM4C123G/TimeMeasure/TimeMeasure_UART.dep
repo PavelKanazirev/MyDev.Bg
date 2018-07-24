@@ -1,0 +1,15 @@
+Dependencies for Project 'TimeMeasure', Target 'UART': (DO NOT MODIFY !)
+F (.\startup.s)(0x5701FDF8)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\PLL.c)(0x5B421F2F)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (PLL.h)(0x5B421F26)
+F (.\UART.c)(0x5B4FAE87)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (UART.h)(0x5B4FAE8A)
+F (.\TimeMeasureMain.cpp)(0x5B4FC3D9)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\timemeasuremain.o --omf_browse .\timemeasuremain.crf --depend .\timemeasuremain.d)
+I (UartAdapter.h)(0x5B3E9D3B)
+I (SysTickAdapter.h)(0x5B4FB887)
+F (.\UartAdapter.cpp)(0x5B4FB100)(--cpp -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\uartadapter.o --omf_browse .\uartadapter.crf --depend .\uartadapter.d)
+I (UartAdapter.h)(0x5B3E9D3B)
+I (PLL.h)(0x5B421F26)
+I (UART.h)(0x5B4FAE8A)
+F (.\SysTickAdapter.cpp)(0x5B4FC075)(--cpp -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\systickadapter.o --omf_browse .\systickadapter.crf --depend .\systickadapter.d)
+I (SysTickAdapter.h)(0x5B4FB887)

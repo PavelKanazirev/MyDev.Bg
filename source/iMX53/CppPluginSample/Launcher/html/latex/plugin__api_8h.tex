@@ -1,0 +1,66 @@
+\hypertarget{plugin__api_8h}{}\section{/home/pavel/\+Programming/eclipse/cpp\+\_\+workspace/\+Cpp\+Plugin\+Sample/\+Plugin\+A\+P\+I/plugin\+\_\+api.h File Reference}
+\label{plugin__api_8h}\index{/home/pavel/\+Programming/eclipse/cpp\+\_\+workspace/\+Cpp\+Plugin\+Sample/\+Plugin\+A\+P\+I/plugin\+\_\+api.\+h@{/home/pavel/\+Programming/eclipse/cpp\+\_\+workspace/\+Cpp\+Plugin\+Sample/\+Plugin\+A\+P\+I/plugin\+\_\+api.\+h}}
+{\ttfamily \#include \char`\"{}I\+Plugin\+Sample.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structPluginDetails}{Plugin\+Details}
+\begin{DoxyCompactList}\small\item\em Structure that will carry the plugin interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{plugin__api_8h_ac3bcb9217a74830c51b6c46c9b5f997f}{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}~1
+\item 
+\#define \hyperlink{plugin__api_8h_a50ea06f13c6cd00e15afa71d53f83e91}{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+S\+Y\+M\+B\+OL}~\char`\"{}exports\char`\"{}
+\item 
+\#define \hyperlink{plugin__api_8h_a2191f69b3db1ef71fb8e5cb2f613c1b5}{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+L\+U\+G\+IN}(x)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classIPluginSample}{I\+Plugin\+Sample} $\ast$($\ast$ \hyperlink{plugin__api_8h_ad9875bfebc4c7cc82c302b2a164de423}{Get\+Plugin\+Func}) ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{plugin__api_8h_a2191f69b3db1ef71fb8e5cb2f613c1b5}\label{plugin__api_8h_a2191f69b3db1ef71fb8e5cb2f613c1b5}} 
+\index{plugin\+\_\+api.\+h@{plugin\+\_\+api.\+h}!D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+L\+U\+G\+IN@{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+L\+U\+G\+IN}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+L\+U\+G\+IN@{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+L\+U\+G\+IN}!plugin\+\_\+api.\+h@{plugin\+\_\+api.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+L\+U\+G\+IN}{DECLARE\_PLUGIN}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+L\+U\+G\+IN(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{extern} \textcolor{stringliteral}{"C"}\{             \(\backslash\)
+                        IPluginSample * getPlugin()     \(\backslash\)
+                        \{                                                               \(\backslash\)
+                                return \textcolor{keyword}{new} x;                           \(\backslash\)
+                        \}                                                               \(\backslash\)
+                        PluginDetails exports =                 \(\backslash\)
+                    \{                                   \(\backslash\)
+                                  PLUGIN\_API\_VERSION,           \(\backslash\)
+                          getPlugin,                \(\backslash\)
+                    \};                                                          \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{plugin__api_8h_a50ea06f13c6cd00e15afa71d53f83e91}\label{plugin__api_8h_a50ea06f13c6cd00e15afa71d53f83e91}} 
+\index{plugin\+\_\+api.\+h@{plugin\+\_\+api.\+h}!P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+S\+Y\+M\+B\+OL@{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+S\+Y\+M\+B\+OL}}
+\index{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+S\+Y\+M\+B\+OL@{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+S\+Y\+M\+B\+OL}!plugin\+\_\+api.\+h@{plugin\+\_\+api.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+S\+Y\+M\+B\+OL}{PLUGIN\_API\_SYMBOL}}
+{\footnotesize\ttfamily \#define P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+S\+Y\+M\+B\+OL~\char`\"{}exports\char`\"{}}
+
+\mbox{\Hypertarget{plugin__api_8h_ac3bcb9217a74830c51b6c46c9b5f997f}\label{plugin__api_8h_ac3bcb9217a74830c51b6c46c9b5f997f}} 
+\index{plugin\+\_\+api.\+h@{plugin\+\_\+api.\+h}!P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON@{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON@{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}!plugin\+\_\+api.\+h@{plugin\+\_\+api.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}{PLUGIN\_API\_VERSION}}
+{\footnotesize\ttfamily \#define P\+L\+U\+G\+I\+N\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON~1}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{plugin__api_8h_ad9875bfebc4c7cc82c302b2a164de423}\label{plugin__api_8h_ad9875bfebc4c7cc82c302b2a164de423}} 
+\index{plugin\+\_\+api.\+h@{plugin\+\_\+api.\+h}!Get\+Plugin\+Func@{Get\+Plugin\+Func}}
+\index{Get\+Plugin\+Func@{Get\+Plugin\+Func}!plugin\+\_\+api.\+h@{plugin\+\_\+api.\+h}}
+\subsubsection{\texorpdfstring{Get\+Plugin\+Func}{GetPluginFunc}}
+{\footnotesize\ttfamily typedef \hyperlink{classIPluginSample}{I\+Plugin\+Sample}$\ast$($\ast$ Get\+Plugin\+Func) ()}
+

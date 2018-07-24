@@ -1,0 +1,8 @@
+ 
+Size VBus_DeviceInfo:9
+
+Size VBus_ManufacturingInfo:16
+
+Size VBus_SecurityEvents:1
+
+Size VBus_SecurityLog:101

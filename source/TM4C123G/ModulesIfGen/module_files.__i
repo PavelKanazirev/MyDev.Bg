@@ -1,0 +1,6 @@
+--cpp -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. -I..\ModulesIfGen
+-I C:\Keil\ARM\RV31\INC
+-I C:\Keil\ARM\CMSIS\Include
+-I C:\Keil\ARM\Inc\Luminary
+-Drvmdk -DPART_LM4F120H5QR
+-o .\module_files.o --omf_browse .\module_files.crf --depend .\module_files.d "config\module_files.csv"

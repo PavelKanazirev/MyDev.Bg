@@ -1,0 +1,19 @@
+Dependencies for Project 'ModulesIfGen', Target 'ModulesIfGen': (DO NOT MODIFY !)
+F (.\startup.s)(0x5701FDF8)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\ModulesIfGen.cpp)(0x5B40A670)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. -I.\Interfaces-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\modulespolymorph.o --omf_browse .\modulespolymorph.crf --depend .\modulespolymorph.d)
+I (C:\Keil\ARM\ARMCC\include\cassert)(0x51C89844)
+I (C:\Keil\ARM\ARMCC\include\assert.h)(0x51C89844)
+F (.\UartAdapter.cpp)(0x5B407C21)()
+F (.\UART.c)(0x52324DB0)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. -I.\Interfaces-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (UART.h)(0x5B3E90F8)
+F (.\PLL.c)(0x52324DB0)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. -I.\Interfaces-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (PLL.h)(0x5B3E90C9)
+F (.\common\Logger.cpp)(0x5B409EE4)()
+F (.\common\Logger.h)(0x5B409F87)()
+F (.\ModuleA\ModuleA.cpp)(0x5B409A4D)()
+F (.\ModuleA\ModuleA.h)(0x5B40A5A6)()
+F (.\ModuleB\ModuleB.cpp)(0x5B40A62C)()
+F (.\ModuleB\ModuleB.h)(0x5B40A62C)()
+F (.\ModuleC\ModuleC.cpp)(0x5B40A61C)()
+F (.\ModuleC\ModuleC.h)(0x5B40A61C)()
+F (.\Interfaces\IRunnable.h)(0x5B409368)()
