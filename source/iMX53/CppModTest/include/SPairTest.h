@@ -8,16 +8,19 @@
 #ifndef INCLUDE_SPAIRTEST_H_
 #define INCLUDE_SPAIRTEST_H_
 
+#include "ITestable.h"
 #include "TestErrors.h"
 
-class SPairTest {
+class SPairTest : public ITestable {
 private:
 	TestErrors testDefaultConstructor();
-	TestErrors testInitConstructor();
-	TestErrors testAssignment();
+	TestErrors initConstructor();
+	TestErrors assignment();
 
 public:
-	TestErrors run();
+	SPairTest(){};
+	virtual ~SPairTest(){};
+	TestErrors runTest();
 
 	inline string toString() { return "SPairTest";};
 };

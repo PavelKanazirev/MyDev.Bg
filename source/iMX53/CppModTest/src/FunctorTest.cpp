@@ -9,8 +9,6 @@
 #include "Functor.h"
 #include "FunctorCaller.h"
 
-namespace common {
-
 FunctorTest::FunctorTest() {
 	// TODO Auto-generated constructor stub
 
@@ -24,7 +22,6 @@ void FunctorTest::run() {
 	Functor a;
 	FunctorCaller at(a);
 
-	at.signal();
+	at.drink();
 }
 
-} /* namespace common */

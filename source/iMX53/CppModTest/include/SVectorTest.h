@@ -8,43 +8,46 @@
 #ifndef INCLUDE_SVECTORTEST_H_
 #define INCLUDE_SVECTORTEST_H_
 
-#include <string>
-
+#include "ITestable.h"
 #include "TestErrors.h"
 
-class SVectorTest
+#include "SVector.h"
+
+using namespace std;
+
+class SVectorTest : public ITestable
 {
 private:
-	TestErrors testDefaultConstructor();
-	TestErrors testInitConstructor();
-	TestErrors testEmpty();
-	TestErrors testPushBack();
-	TestErrors testPopBack();
-	TestErrors testResize();
-	TestErrors testFull();
-	TestErrors testFront();
-	TestErrors testBack();
-	TestErrors testClear();
-	TestErrors testIterators();
-	TestErrors testErase();
+	typedef SVector<int>	tIntVector;
+	tIntVector*		fpVector1;
+	tIntVector*		fpVector2;
 
-	void cleanup();
+    virtual void setUp();
+    virtual void tearDown();
+    virtual void cleanUp();
+
+    TestErrors testDefaultConstructor();
+    TestErrors testInitConstructor();
+    TestErrors testEmpty();
+    TestErrors testPushBack();
+    TestErrors testPopBack();
+    TestErrors testResize();
+    TestErrors testFull();
+    TestErrors testFront();
+    TestErrors testBack();
+    TestErrors testClear();
+    TestErrors testIterators();
+    TestErrors testErase();
 
 public:
 	SVectorTest();
 	virtual ~SVectorTest();
 
-	typedef SVector<int>	tIntVector;
-	tIntVector*		fpVector1;
-	tIntVector*		fpVector2;
+	TestErrors runTest();
+	inline string toString() { return "SVectorTest";};
 
-    virtual void SetUp();
-
-    virtual void TearDown();
-
-	TestErrors run();
-
-	inline string toString() { return "SVectorTests";};
 };
+
+
 
 #endif /* INCLUDE_SVECTORTEST_H_ */

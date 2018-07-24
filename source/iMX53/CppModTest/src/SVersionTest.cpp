@@ -7,9 +7,6 @@
 
 #include "SVersionTest.h"
 
-namespace common {
-
-static_assert(version == 3U, "Version has been manipulated!");
 
 SVersionTest::SVersionTest() {
 	// TODO Auto-generated constructor stub
@@ -20,4 +17,22 @@ SVersionTest::~SVersionTest() {
 	// TODO Auto-generated destructor stub
 }
 
-} /* namespace common */
+int SVersionTest::myStrNCat(char * destination, const char * source, unsigned int n)
+{
+	// implementation
+	UNUSED(destination)
+	UNUSED(source)
+	UNUSED(n)
+
+	return 0;
+}
+
+int SVersionTest::myStrCat(char * destination, const char * source)
+{
+	static_assert(version == 3U, "Depricated!");
+
+	UNUSED(destination)
+	UNUSED(source)
+
+	return 0;
+}

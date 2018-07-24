@@ -7,8 +7,6 @@
 
 using namespace std;
 
-using namespace common;
-
 TestErrors SPairTest::testDefaultConstructor()
 {
 	TestErrors result(TestErrors::EOK);
@@ -22,90 +20,81 @@ TestErrors SPairTest::testDefaultConstructor()
     if ( static_cast<float>(2.34) != pair.second )
     {
     	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
     }
 
     return result;
 }
 
-TestErrors SPairTest::testInitConstructor()
+TestErrors SPairTest::initConstructor()
 {
 	TestErrors result(TestErrors::EOK);
     SPair<int, float> pair(1, 2.34), target;
     if ( pair == target )
     {
     	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
     }
 
     target = pair;
     if ( pair != target )
     {
     	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
     }
 
     if ( static_cast<int>(1) != target.first )
     {
     	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
     }
 
     if ( static_cast<float>(2.34) != target.second )
     {
     	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
     }
 
     return result;
 }
 
-TestErrors SPairTest::testAssignment()
+TestErrors SPairTest::assignment()
 {
 	TestErrors result(TestErrors::EOK);
 
     SPair<int, float> pair(1, 2.34), target;
     if ( pair == target )
     {
-    	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
+
     }
 
     target = pair;
     if ( pair != target )
     {
-    	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
+
     }
 
     if ( static_cast<int>(1) != target.first )
     {
-    	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
+
     }
 
     if ( static_cast<float>(2.34) != target.second )
     {
-    	cerr <<__PRETTY_FUNCTION__<<"returned wrong result"<<endl;
-    	result = TestErrors::EFail;
+
     }
 
     return result;
 }
 
-TestErrors SPairTest::run()
+TestErrors SPairTest::runTest()
 {
 	TestErrors result(TestErrors::EOK);
 
 	result = testDefaultConstructor();
 	if (result == TestErrors::EOK)
 	{
-		result = testInitConstructor();
+		result = initConstructor();
 	}
 
 	if (result == TestErrors::EOK)
 	{
-		result = testAssignment();
+		result = assignment();
 	}
 
     return result;

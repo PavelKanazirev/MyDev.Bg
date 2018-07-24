@@ -4,19 +4,20 @@
  *  Created on: Jul 18, 2018
  *      Author: pavel
  */
+#include <iostream>
 
 #include "FunctorCaller.h"
 
-namespace common {
+using namespace std;
 
-common::FunctorCaller::FunctorCaller(Functor& _cb): my_cb(_cb)
+FunctorCaller::FunctorCaller(Functor& _cb): my_cb(_cb)
 {
 
 }
 
-void FunctorCaller::signal()
+void FunctorCaller::drink()
 {
+	cout <<"drink ";
     my_cb.operator ()();
 }
 
-} /* namespace common */

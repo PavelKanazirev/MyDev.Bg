@@ -10,15 +10,11 @@
 
 #include "TestErrors.h"
 
-namespace common {
-
 class FunctorTest {
 public:
 	FunctorTest();
 	virtual ~FunctorTest();
 	void run();
 };
-
-} /* namespace common */
 
 #endif /* FUNCTORTEST_H_ */

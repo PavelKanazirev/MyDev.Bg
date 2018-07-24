@@ -8,13 +8,9 @@
 #ifndef FUNCTOR_H_
 #define FUNCTOR_H_
 
-namespace common {
-
 class Functor {
 public :
    void operator()();
 };
-
-} /* namespace common */
 
 #endif /* FUNCTOR_H_ */

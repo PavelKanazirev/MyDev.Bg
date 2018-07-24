@@ -10,17 +10,13 @@
 
 #include "Functor.h"
 
-namespace common {
-
 class FunctorCaller {
-public:
-	Functor& my_cb;
+private:
+	Functor& my_cb;	// will type "beer"
 
 public:
 	FunctorCaller(Functor& _cb);
-    void signal();
+    void drink();	// will type "drink" and call the functor
 };
-
-} /* namespace common */
 
 #endif /* FUNCTORCALLER_H_ */

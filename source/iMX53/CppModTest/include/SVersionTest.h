@@ -8,17 +8,18 @@
 #ifndef SVERSIONTEST_H_
 #define SVERSIONTEST_H_
 
-//constexpr unsigned int version = 4U;
-constexpr unsigned int version = 3U;
+#include "commonTypes.h"
 
-namespace common {
+constexpr unsigned int version = 3U;
+//constexpr unsigned int version = 4U;
 
 class SVersionTest {
 public:
 	SVersionTest();
 	virtual ~SVersionTest();
-};
 
-} /* namespace common */
+	int myStrNCat(char * destination, const char * source, unsigned int n);
+	int myStrCat(char * destination, const char * source);
+};
 
 #endif /* SVERSIONTEST_H_ */

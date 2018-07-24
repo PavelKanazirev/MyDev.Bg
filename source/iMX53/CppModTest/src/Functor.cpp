@@ -11,11 +11,8 @@
 
 using namespace std;
 
-namespace common {
-
 void Functor::operator()()
-    {
-    	cout <<__PRETTY_FUNCTION__<<endl;
-    }
+{
+	cout <<"beer"<<endl;
+}
 
-} /* namespace common */
